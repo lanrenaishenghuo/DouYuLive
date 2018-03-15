@@ -18,6 +18,7 @@ class MainViewController: UITabBarController {
         addChildVc(storeName: "Profile")
     }
     private func addChildVc(storeName:String){
+        //将可选类型，解包成固定类型
         let childVc = UIStoryboard(name:storeName, bundle: nil).instantiateInitialViewController()!
         addChildViewController(childVc)
     }
